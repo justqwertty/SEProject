@@ -130,10 +130,10 @@ public class Payment {
 
     public Receipt generateReceipt() {
         Receipt receipt = new Receipt();
-        receipt.setReceiptNumber(receiptNumber);
+        receipt.setReceiptID(receiptNumber);
         receipt.setPaymentID(paymentID);
         receipt.setStudentID(studentID);
-        receipt.setAmount(amount);
+        receipt.setAmount((float) amount);
         receipt.setPaymentMethod(paymentMethod);
         return receipt;
     }

@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Read(//d/C/Users/iamlu/OneDrive/Documents/GitHub/**)",
+      "Bash(ls -la *.jpg)",
+      "Bash(cp \"../../actd1 \\(1\\).jpg\" \"./actd1.jpg\")",
+      "Bash(cp \"../../SRS UML Class diagram  -fixes for phase2.jpg\" \"./class-diagram.jpg\")",
+      "Bash(cp \"../../UC-02_Tuition_Payment_Sequence_Diagram_1 \\(3\\).jpg\" \"./sequence-diagram.jpg\")",
+      "Bash(javac -d out src/main/java/me/sigma/*.java src/main/java/me/sigma/**/*.java)"
     ]
   }
 }

@@ -29,6 +29,6 @@ public class Student extends User {
         this.absenceThreshold = absenceThreshold;
     }
 
-    public void maintainPersonalDetails(StudentDetails details) {
+    public void maintainPersonalDetails(String name, String email, String phone) {
     }
 }
