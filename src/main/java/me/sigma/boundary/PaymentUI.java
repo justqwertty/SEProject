@@ -22,7 +22,7 @@ public class PaymentUI {
      */
     public void processPayment() {
         SwingUtilities.invokeLater(() -> {
-            TuitionPaymentGUI gui = new TuitionPaymentGUI();
+            TuitionUI gui = new TuitionUI();
             if (parentFrame != null) {
                 gui.setLocation(parentFrame.getLocation());
             }

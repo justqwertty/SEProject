@@ -1,6 +1,6 @@
 package me.sigma;
 
-import me.sigma.boundary.TuitionPaymentGUI;
+import me.sigma.boundary.TuitionUI;
 
 /**
  * Main entry point for the Tuition Payment System.
@@ -8,6 +8,6 @@ import me.sigma.boundary.TuitionPaymentGUI;
  */
 public class Main {
     public static void main(String[] args) {
-        TuitionPaymentGUI.main(args);
+        TuitionUI.main(args);
     }
 }
