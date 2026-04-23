@@ -6,3 +6,5 @@ dist/
 nbdist/
 .nb-gradle/
 *.class
+SEProjectDB/
+derby.log

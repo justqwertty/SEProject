@@ -22,15 +22,6 @@ public class TuitionUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        loginPanel = new javax.swing.JPanel();
-        titleLabel = new javax.swing.JLabel();
-        subtitleLabel = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        studentIdField = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        passwordField = new javax.swing.JPasswordField();
-        loginButton = new javax.swing.JButton();
-        statusLabel = new javax.swing.JLabel();
         paymentSelectionPanel = new javax.swing.JPanel();
         headerLabel = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -53,79 +44,20 @@ public class TuitionUI extends javax.swing.JFrame {
         printButton = new javax.swing.JButton();
         emailButton = new javax.swing.JButton();
         doneButton = new javax.swing.JButton();
+        loginPanel = new javax.swing.JPanel();
+        titleLabel = new javax.swing.JLabel();
+        subtitleLabel = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        studentIdField = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        passwordField = new javax.swing.JPasswordField();
+        loginButton = new javax.swing.JButton();
+        statusLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tuition Payment System - UC-02");
         setResizable(false);
         getContentPane().setLayout(new java.awt.CardLayout());
-
-        titleLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titleLabel.setText("Tuition Payment System");
-
-        subtitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        subtitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        subtitleLabel.setText("Student Login");
-
-        jLabel3.setText("Student ID:");
-
-        jLabel4.setText("Password:");
-
-        loginButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        loginButton.setText("Login");
-        loginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginButtonActionPerformed(evt);
-            }
-        });
-
-        statusLabel.setForeground(new java.awt.Color(255, 0, 0));
-        statusLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
-        loginPanel.setLayout(loginPanelLayout);
-        loginPanelLayout.setHorizontalGroup(
-            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(titleLabel)
-                    .addGroup(loginPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(studentIdField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(loginPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(27, 27, 27)
-                        .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(statusLabel)
-                    .addComponent(subtitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-        loginPanelLayout.setVerticalGroup(
-            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginPanelLayout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(titleLabel)
-                .addGap(10, 10, 10)
-                .addComponent(subtitleLabel)
-                .addGap(40, 40, 40)
-                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(studentIdField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(statusLabel)
-                .addGap(0, 29, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(loginPanel, "LOGIN");
 
         headerLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         headerLabel.setText("Tuition Payment Details");
@@ -326,6 +258,74 @@ public class TuitionUI extends javax.swing.JFrame {
 
         getContentPane().add(receiptPanel, "RECEIPT");
 
+        titleLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titleLabel.setText("Tuition Payment System");
+
+        subtitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        subtitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subtitleLabel.setText("Student Login");
+
+        jLabel3.setText("Student ID:");
+
+        jLabel4.setText("Password:");
+
+        loginButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        loginButton.setText("Login");
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginButtonActionPerformed(evt);
+            }
+        });
+
+        statusLabel.setForeground(new java.awt.Color(255, 0, 0));
+        statusLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
+        loginPanel.setLayout(loginPanelLayout);
+        loginPanelLayout.setHorizontalGroup(
+            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(titleLabel)
+                    .addGroup(loginPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(studentIdField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(loginPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(27, 27, 27)
+                        .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(statusLabel)
+                    .addComponent(subtitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        loginPanelLayout.setVerticalGroup(
+            loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loginPanelLayout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(titleLabel)
+                .addGap(10, 10, 10)
+                .addComponent(subtitleLabel)
+                .addGap(40, 40, 40)
+                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(studentIdField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(statusLabel)
+                .addGap(0, 29, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(loginPanel, "LOGIN");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -470,7 +470,7 @@ public class TuitionUI extends javax.swing.JFrame {
         }
     }
 
-    private void displayReceipt(Receipt receipt) {
+    private void displayReceipt(Receipt receipt) {// cool text :)
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String receiptNumber = receipt.getReceiptID() != null ? receipt.getReceiptID() : "RCP" + System.currentTimeMillis();
         receipt.setReceiptID(receiptNumber);

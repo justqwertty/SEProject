@@ -11,6 +11,9 @@ package me.seproject.mavenproject1;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        me.seproject.mavenproject1.db.DBConnection.initializeDatabase();
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            new me.seproject.mavenproject1.boundary.TuitionUI().setVisible(true);
+        });
     }
 }
